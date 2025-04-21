@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acceptance Rate Tracker</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <script type="module" src="scripts/main.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Acceptance Rate Tracker</h1>
+
+    <div class="button-group">
+      <button class="btn btn-accept" id="btnAccept">Accept</button>
+      <button class="btn btn-decline" id="btnDecline">Decline</button>
+    </div>
+
+    <div class="stats">
+      <p class="rate" id="acceptanceRate">Acceptance Rate: 100%</p>
+      <p class="subtitle" id="offerCount">Based on last 100 offers.</p>
+    </div>
+
+    <div class="edit-section">
+      <input type="number" id="editIndex" class="edit-input" placeholder="Enter position (1 = latest)" />
+      <button class="btn btn-accept" id="btnMarkAccepted">Mark Accepted</button>
+      <button class="btn btn-decline" id="btnMarkDeclined">Mark Declined</button>
+    </div>
+
+    <div class="offer-grid" id="offerGrid"></div>
+    <p class="storage-status" id="storageStatus"></p>
+  </div>
+</body>
+</html>
